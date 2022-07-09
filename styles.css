@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --border-bottom: rgb(243, 238, 238);
+    --attrribution: rgb(62, 82, 163);
+    --upper-body: rgb(236, 119, 95);
+    --main-page-color: rgb(255, 255, 255);
+    --chart-stick-active: hsl(186, 34%, 60%);
+}
+
+
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: hsl(27, 66%, 92%);
+    width: 100%;
+    max-width: 1440px;
+    padding: 3em 0 0 0;
+}
+
+
+.upper-body {
+    background-color: var(--upper-body);
+    border-radius: 1em;
+    padding: 0 2em 0 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6em;
+
+}
+
+
+.page-wrapper {
+    width: 100%;
+    max-width: 30em;
+    margin: 0 auto;
+}
+
+
+.main-page-content {
+    background-color: var(--main-page-color);
+    text-align: start;
+    margin-top: 1em;
+    border-radius: 1em;
+    padding: 1.2em;
+    margin-bottom: 2em;
+}
+
+
+.white {
+    color: #ffffff;
+}
+
+.balance {
+    font-weight: 100;
+    text-shadow: darkgray;
+    color: #ece7e7;
+}
+
+.spending {
+    margin-left: 0.5em;
+    font-size: x-large;
+}
+
+.chart-section {
+    display: flex;
+    gap: 0.3em;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    height: 19em;
+    width: 100%;
+    max-width: 30em;
+    margin: 0 auto;
+    margin-bottom: 2em;
+    padding: 0.5em;
+    border-bottom: 2px solid var(--border-bottom);
+}
+
+
+.chart-section .chart {
+    width: 3em;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+.chart .title-div {
+    background-color: black;
+    width: 4em;
+    padding: 0.5em 1em 0.5em 0.5em;
+    border-radius: 0.5em;
+    text-align: center;
+    color: white;
+    display: none;
+}
+
+
+.chart:hover .title-div {
+    display: block;
+}
+
+
+.chart .chart-stick {
+    background-color: var(--upper-body);
+    height: 7em;
+    width: 100%;
+    max-width: 3em;
+    border-radius: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+.chart.active .chart-stick {
+    background-color: var(--chart-stick-active);
+}
+
+.chart:hover .chart-stick {
+    opacity: 0.5;
+}
+
+.chart .days-bar {
+    width: 3em;
+}
+
+
+.total-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5em 1em 0 1em;
+}
+
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: var(--attrribution);
+}
