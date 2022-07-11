@@ -202,6 +202,7 @@ body {
         align-items: flex-end;
         flex-direction: column;
     }
+    
 
 
 }
@@ -249,6 +250,16 @@ body {
         justify-content: center;
         align-items: flex-end;
         flex-direction: column;
+    }
+
+    .chart .title-div {
+        background-color: black;
+        width: 2.5em;
+        padding: 0.5em 1em 0.5em 0.5em;
+        border-radius: 0.5em;
+        text-align: center;
+        color: white;
+        display: none;
     }
 
 }
