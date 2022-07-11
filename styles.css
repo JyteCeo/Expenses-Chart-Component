@@ -141,6 +141,15 @@ body {
 }
 
 
+.total-right {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+
+
 .attribution {
     font-size: 11px;
     text-align: center;
@@ -233,5 +242,13 @@ body {
         justify-content: flex-end;
         align-items: center;
     }
+
     
+    .total-right {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        flex-direction: column;
+    }
+
 }
