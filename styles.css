@@ -38,7 +38,7 @@ body {
 .page-wrapper {
     width: 100%;
     max-width: 30em;
-    margin: 0 auto;
+    margin: 8em auto;
 }
 
 
@@ -75,7 +75,7 @@ body {
     text-align: center;
     height: 19em;
     width: 100%;
-    max-width: 30em;
+    /* max-width: 30em; */
     margin: 0 auto;
     margin-bottom: 2em;
     padding: 0.5em;
@@ -119,6 +119,7 @@ body {
     margin-bottom: 0.5em;
 }
 
+
 .chart.active .chart-stick {
     background-color: var(--chart-stick-active);
 }
@@ -147,4 +148,90 @@ body {
 
 .attribution a {
     color: var(--attrribution);
+}
+
+
+
+@media screen and (max-width: calc(760px + 16px)) {
+    .page-wrapper {
+        width: 100%;
+        max-width: 25em;
+        background-color: hsl(27, 66%, 92%);
+        padding: 2em 0.5em;
+        margin: 8em auto;
+    }
+
+    .main-page-content {
+        background-color: var(--main-page-color);
+        text-align: start;
+        margin-top: 1em;
+        border-radius: 1em;
+        max-width: 25em;
+        padding: 2em;
+        margin-bottom: 2em;
+
+    }
+
+
+    .total-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1.5em 1em 0 1em;
+    }
+
+
+    .chart-section {
+        height: 17em;
+        width: 80%;
+        border-bottom: 2px solid var(--border-bottom);
+    }
+
+    .total-right {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        flex-direction: column;
+    }
+
+
+}
+
+@media screen and (max-width: calc(450px + 32px)) {
+    .page-wrapper {
+        width: 100%;
+        max-width: 21.875em;
+        background-color: hsl(27, 66%, 92%);
+    }
+
+    .main-page-content {
+        background-color: var(--main-page-color);
+        text-align: start;
+        margin-top: 0.5em;
+        border-radius: 1em;
+        max-width: 21em;
+        padding: 1em;
+        margin-bottom: 1.5em;
+
+    }
+
+    .chart .chart-stick {
+        background-color: var(--upper-body);
+        height: 7em;
+        width: 100%;
+        max-width: 2.5em;
+        border-radius: 0.5em;
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+    }
+
+    .chart-section .chart {
+        width: 2.5em;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
 }
